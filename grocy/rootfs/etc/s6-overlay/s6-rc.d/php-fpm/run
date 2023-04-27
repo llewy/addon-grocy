@@ -14,6 +14,7 @@ bashio::log.info "Starting PHP-FPM..."
 
 if bashio::config.false 'features.batteries'; then
     export GROCY_FEATURE_FLAG_BATTERIES=0
+    export GROCY_FEATURE_FLAG_LABEL_PRINTER=1
 fi
 
 if bashio::config.false 'features.calendar'; then
